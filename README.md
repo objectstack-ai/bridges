@@ -39,6 +39,10 @@ pnpm test
 
 Node 22+, pnpm 10.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). External contributors sign the [CLA](CLA.md) once, by replying to the bot on their first pull request.
+
 ## License
 
 Apache-2.0
