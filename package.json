@@ -1,0 +1,24 @@
+{
+  "name": "bridges",
+  "private": true,
+  "description": "Stateless relays that put vendor-specific suites (DingTalk, WeCom, Feishu, ...) behind the standard protocols ObjectStack speaks: OpenAPI/MCP, webhook, OIDC, SCIM.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "pnpm@10.31.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test",
+    "changeset": "changeset"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.11"
+  }
+}

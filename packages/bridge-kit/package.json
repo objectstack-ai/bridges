@@ -1,0 +1,26 @@
+{
+  "name": "@objectstack/bridge-kit",
+  "version": "0.0.0",
+  "description": "Shared building blocks for ObjectStack bridges: access-token caching today; the OIDC provider shell, SCIM client and webhook relay as the vendor bridges need them.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/objectstack-ai/bridges",
+    "directory": "packages/bridge-kit"
+  }
+}
